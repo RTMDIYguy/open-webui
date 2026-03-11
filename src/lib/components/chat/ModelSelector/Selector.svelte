@@ -205,7 +205,7 @@
 		const [res, controller] = await pullModel(localStorage.token, sanitizedModelTag, '0').catch(
 			(error) => {
 				toast.error(`${error}`);
-				return null;
+				return [null, null];
 			}
 		);
 
